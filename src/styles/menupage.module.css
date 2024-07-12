@@ -1,0 +1,221 @@
+
+.menu_main{
+    margin-top: 5rem;
+}
+
+.menu_title{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.menu_title h1{
+    text-transform: capitalize;
+    font-family: var(--font-headings);
+    color: var(--main-txt-color);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    margin-bottom: 0.6rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.menu_title h1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    height: 2px;
+    background-color: var(--main-secondary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu_title p{
+    font-family: var(--font-text);
+    font-size: 1rem;
+    color: var(--main-secondary-color);
+}
+
+
+
+
+.menu_table{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    margin-bottom: 3rem;
+
+}
+
+
+.menu_column{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+
+.menu_column h2{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: var(--font-headings);
+    color: var(--main-txt-color);
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.menu_column h2::before{
+    position: absolute;
+    content: '';
+    background-color: var(--main-secondary-color);
+    width: 100px;
+    bottom: 0;
+    height: 2px
+}
+
+.single_menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.single_menu img{
+   flex: 0 0 auto;
+   width: 110px;
+   height: 140px;
+   border-radius: 50%;
+   border: 1px dashed #ddd;
+   transition: 0.3s;
+}
+
+.single_menu:hover img{
+   transform: rotate(360deg);
+}
+
+
+.food_content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.single_menu .food_content h3{
+    text-transform: capitalize;
+    font-family: var(--font-headings);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--main-secondary-color);
+    border-bottom: 1px dashed var(--main-secondary-color);
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+
+.single_menu .food_content h3 span{
+    font-style: italic;
+    float: right;
+    font-weight: 600;
+}
+
+
+.single_menu .food_content p{
+    font-family: var(--font-text);
+    font-size: 1rem;
+    color: var(--main-txt-color);
+    line-height: 1.2rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px){
+    .menu_table{
+        gap: 40px;
+    }
+ 
+     .menu_column{
+         width: 100%;
+     }
+     
+     .menu_title h1 {
+         letter-spacing: 0.1rem;
+     }
+     .menu_title h1::before{
+         width: 280px;
+     }
+ 
+
+ 
+     .menu_column h2{
+         letter-spacing: 0.1rem;
+     } 
+ 
+     .single_menu{
+         flex-direction: column;
+         gap: 20px;
+     }
+ 
+ 
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .menu_column h2{
+        font-size: 2.5rem;
+    }
+
+    .menu_title h1{
+        font-size: 4rem;
+    }
+
+    .menu_title p{
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+@media screen and (min-width: 992px){
+    .menu_column h2{
+        font-size: 3rem;
+    }
+
+    .menu_title h1{
+        font-size: 5rem;
+    }
+
+    .menu_title p{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (min-width: 1400px){
+    .menu_column h2{
+        font-size: 3.5rem;
+    }
+
+    .menu_title h1{
+        font-size: 6rem;
+    }
+
+    .menu_title p{
+        font-size: 1.3rem;
+    }
+}
+
+
