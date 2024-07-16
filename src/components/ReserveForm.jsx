@@ -39,7 +39,7 @@ return (
         <div className="reservation-form">
 
             <div className="input-container">
-               <label htmlFor="guestLists">Party Size</label><br/>
+               <label htmlFor="guests">Party Size</label><br/>
                 
                 <div className="input-field">
                 <select id="guests" name="guestLists"
@@ -67,6 +67,7 @@ return (
                   <label htmlFor="date">Date</label> <br />
                  <div className="input-field date-field">
                  <DatePicker
+                   id='date'
                    selected={dateVal}
                    onChange={(date) => setDateVal(date)}
                    required={true}
@@ -81,6 +82,7 @@ return (
                  <div className="input-field">
                    <input  
                      type='time'
+                     id='time'
                      value={timeVal}
                      onChange={(e) => setTimeVal(e.target.value)}
                      name="time"

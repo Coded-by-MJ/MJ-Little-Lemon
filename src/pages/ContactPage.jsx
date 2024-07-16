@@ -93,13 +93,15 @@ const ContactPage = () => {
                         <label className="col-form-label"htmlFor="firstName">Enter Your First Name</label>
                         <input type="text" className="form-control" 
                         name="firstName"
+                         id="firstName"
                          value={formData.firstName}
                          onChange={handleChange}
                          placeholder="First Name" required/>
                        </div>
                        <div className="col-sm-12 col-md-6 col-lg-6">
-                        <label className="col-form-label"htmlFor="lastName">Enter Your Last Name</label>
+                        <label className="col-form-label" htmlFor="lastName">Enter Your Last Name</label>
                         <input type="text" 
+                          id="lastName"
                          value={formData.lastName}
                          onChange={handleChange}
                         className="form-control" name="lastName" 
@@ -113,13 +115,15 @@ const ContactPage = () => {
                          value={formData.email}
                          onChange={handleChange}
                          className="form-control" 
+                         id="email"
                          name="email" placeholder="Email"
                           required />
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 ">
-                        <label className="col-form-label"htmlFor="phone">Enter Your Phone</label>
+                        <label className="col-form-label" htmlFor="phone">Enter Your Phone</label>
                          <input type="tel" 
                          value={formData.phone}
+                           id="phone"
                          onChange={handleChange}
                          className="form-control" name="phone"
                           placeholder="Phone" />
@@ -131,6 +135,7 @@ const ContactPage = () => {
                             <textarea rows="7"
                              value={formData.message}
                              onChange={handleChange}
+                              id="message"
                             className="form-control" 
                             name="message" placeholder="Message" required></textarea>
                           </div>

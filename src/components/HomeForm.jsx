@@ -77,7 +77,7 @@ import "../styles/reserveform.css";
 
     <form className='form-elem'  onSubmit={handleHomeReserveForm}>
               <div className="input-wrapper">
-                 <label htmlFor="guestLists">Party Size</label><br/>
+                 <label htmlFor="guests">Party Size</label><br/>
                 <div className="input-field">
                 <select id="guests" name="guestLists"
                 value={guests}
@@ -105,6 +105,7 @@ import "../styles/reserveform.css";
                  <label htmlFor="date">Date</label> <br />
                  <div className="input-field date-field">
                  <DatePicker
+                   id='date'
                    selected={dateVal}
                    onChange={(date) => setDateVal(date)}
                    required={true}
@@ -121,6 +122,7 @@ import "../styles/reserveform.css";
                      value={timeVal}
                      onChange={(e) => setTimeVal(e.target.value)}
                      name="time"
+                     id="time"
                      ref={timeRef}
                    />
                    <FaClock className='time-icon'
