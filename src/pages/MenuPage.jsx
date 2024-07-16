@@ -1,4 +1,4 @@
-
+import { memo } from 'react'
 import styles from '../styles/menupage.module.css'
 
 import bruschetta from "../assets/images/Bruschetta.jpg"
@@ -130,4 +130,4 @@ const MenuPage = () => {
   )
 }
 
-export default MenuPage
+export default memo(MenuPage)

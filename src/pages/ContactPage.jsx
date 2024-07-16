@@ -1,6 +1,6 @@
 import { FaAnglesRight } from "react-icons/fa6";
 import { Form } from 'react-bootstrap';
-import { useState } from "react";
+import { useState, memo } from "react";
 import logolight from "../assets/images/picture-logo-light.png";
 import logoDark from "../assets/images/Logo_Dark.png";
 import styles from "../styles/contactpage.module.css";
@@ -172,4 +172,4 @@ const ContactPage = () => {
   )
 }
 
-export default ContactPage
+export default memo(ContactPage)
