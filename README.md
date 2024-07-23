@@ -12,7 +12,7 @@ Little Lemon is a family-owned Mediterranean restaurant focused on traditional r
 
 ### Links
 
-- Live Site URL: [Little-Lemon](https://coded-by-mj.github.io/MJ-Little-Lemon.github.io/)
+- Live Site URL: [Little-Lemon](https://mj-little-lemon.netlify.app/)
 
 
 
