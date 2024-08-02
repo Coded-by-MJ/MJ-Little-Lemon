@@ -1,4 +1,4 @@
-import { memo } from "react"
+
 import  chefs from  "../assets/images/chefs.jpg"
 import  marioAndadrian from  "../assets/images/mario-and-adrian.jpg"
 import  b_MarioAndAdrian from  "../assets/images/big_mario_and_adrian.jpg"
@@ -62,4 +62,4 @@ const AboutPage = () => {
   )
 }
 
-export default memo(AboutPage)
+export default AboutPage

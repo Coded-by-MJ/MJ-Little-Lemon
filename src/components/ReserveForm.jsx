@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, memo } from 'react';
 import { LiaAngleDownSolid, LiaAngleUpSolid  } from "react-icons/lia";
 import  DatePicker from "react-datepicker";
 
@@ -116,4 +116,4 @@ return (
 }
 
 
-export default ReserveForm
+export default memo(ReserveForm)
